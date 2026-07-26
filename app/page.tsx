@@ -1,13 +1,15 @@
+import { Hero } from "@/components/home/Hero";
 import { siteConfig } from "@/data/site";
 
 /**
- * Placeholder sections for navbar scroll-spy only.
- * Hero and full section content come in later steps.
+ * Home composition.
+ * Hero is live; remaining sections are placeholders until built.
+ * About is intentionally not implemented yet.
  */
 export default function HomePage() {
   return (
     <main id="main">
-      <div id="top" className="h-16 md:h-[4.25rem]" aria-hidden="true" />
+      <Hero />
 
       {siteConfig.nav.map((item) => (
         <section
@@ -22,7 +24,7 @@ export default function HomePage() {
             </p>
             <h2 className="mt-3 font-display text-h1 text-foreground">{item.label}</h2>
             <p className="mt-3 max-w-measure text-body text-muted-foreground">
-              Placeholder content so the sticky navbar active state can be verified.
+              Placeholder content so navigation and scroll targets keep working.
               Real section UI will replace this later.
             </p>
           </div>
