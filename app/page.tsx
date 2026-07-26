@@ -1,20 +1,22 @@
 import { About } from "@/components/home/About";
+import { Experience } from "@/components/home/Experience";
 import { Hero } from "@/components/home/Hero";
 import { siteConfig } from "@/data/site";
 
 /**
  * Home composition.
- * Hero and About are live; remaining sections are placeholders until built.
+ * Hero, About, and Experience are live; remaining sections are placeholders.
  */
 export default function HomePage() {
   const pendingSections = siteConfig.nav.filter(
-    (item) => item.sectionId !== "about",
+    (item) => item.sectionId !== "about" && item.sectionId !== "experience",
   );
 
   return (
     <main id="main">
       <Hero />
       <About />
+      <Experience />
 
       {pendingSections.map((item) => (
         <section
