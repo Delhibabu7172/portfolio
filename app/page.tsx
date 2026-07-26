@@ -1,15 +1,21 @@
 import { About } from "@/components/home/About";
 import { Experience } from "@/components/home/Experience";
+import { FeaturedProjects } from "@/components/home/FeaturedProjects";
 import { Hero } from "@/components/home/Hero";
 import { Skills } from "@/components/home/Skills";
 import { siteConfig } from "@/data/site";
 
 /**
  * Home composition.
- * Hero, About, Experience, and Skills are live; remaining sections are placeholders.
+ * Contact remains a placeholder until built.
  */
 export default function HomePage() {
-  const liveSections = new Set(["about", "experience", "skills"]);
+  const liveSections = new Set([
+    "about",
+    "experience",
+    "skills",
+    "projects",
+  ]);
   const pendingSections = siteConfig.nav.filter(
     (item) => !liveSections.has(item.sectionId),
   );
@@ -20,6 +26,7 @@ export default function HomePage() {
       <About />
       <Experience />
       <Skills />
+      <FeaturedProjects />
 
       {pendingSections.map((item) => (
         <section

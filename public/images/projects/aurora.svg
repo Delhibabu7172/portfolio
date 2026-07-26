@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#07090C"/>
+  <rect width="1280" height="800" fill="url(#aurora-bg)"/>
+  <circle cx="980" cy="180" r="220" fill="#2DD4BF" fill-opacity="0.16"/>
+  <circle cx="320" cy="620" r="260" fill="#2DD4BF" fill-opacity="0.08"/>
+  <g stroke="#E8EEF6" stroke-opacity="0.08">
+    <path d="M0 160H1280"/><path d="M0 320H1280"/><path d="M0 480H1280"/><path d="M0 640H1280"/>
+    <path d="M160 0V800"/><path d="M320 0V800"/><path d="M480 0V800"/><path d="M640 0V800"/><path d="M800 0V800"/><path d="M960 0V800"/><path d="M1120 0V800"/>
+  </g>
+  <rect x="140" y="180" width="420" height="240" rx="18" fill="#0E1218" stroke="#E8EEF6" stroke-opacity="0.12"/>
+  <rect x="170" y="220" width="180" height="14" rx="7" fill="#2DD4BF" fill-opacity="0.7"/>
+  <rect x="170" y="260" width="280" height="10" rx="5" fill="#E8EEF6" fill-opacity="0.2"/>
+  <rect x="170" y="290" width="240" height="10" rx="5" fill="#E8EEF6" fill-opacity="0.12"/>
+  <rect x="170" y="340" width="100" height="40" rx="10" fill="#2DD4BF" fill-opacity="0.25" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <rect x="620" y="220" width="480" height="360" rx="18" fill="#0E1218" stroke="#E8EEF6" stroke-opacity="0.12"/>
+  <path d="M680 480 C760 360, 860 520, 940 400 C1000 320, 1040 300, 1080 280" stroke="#2DD4BF" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <text x="140" y="700" fill="#E8EEF6" fill-opacity="0.55" font-family="ui-monospace, monospace" font-size="28">AURORA</text>
+  <defs>
+    <radialGradient id="aurora-bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 320) rotate(90) scale(520 640)">
+      <stop stop-color="#134E4A" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#07090C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
